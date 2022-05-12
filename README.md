@@ -1,4 +1,4 @@
-# DacKGR
+# DacKGR运行说明
 
 Source codes and datasets for EMNLP 2020 paper [Dynamic Anticipation and Completion for Multi-Hop Reasoning over Sparse Knowledge Graph](https://arxiv.org/pdf/2010.01899.pdf)
 
