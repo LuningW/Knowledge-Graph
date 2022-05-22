@@ -37,6 +37,7 @@ def beam_search(pn, e_s, q, e_t, kg, num_steps, beam_size, return_path_component
 
     def top_k_action(log_action_dist, action_space):
         """
+        
         Get top k actions.
             - k = beam_size if the beam size is smaller than or equal to the beam action space size
             - k = beam_action_space_size otherwise
@@ -212,5 +213,6 @@ def beam_search(pn, e_s, q, e_t, kg, num_steps, beam_size, return_path_component
                 p_c.append((e_name, top_k_edge_labels, var_to_numpy(top_k_action_prob)))
             path_components_list.append(p_c)
         beam_search_output = ['path_components_list']
+        
 
     return beam_search_output
