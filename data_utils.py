@@ -79,6 +79,7 @@ def change_to_test_model_path(dataset, model_path):
     new_model_path = os.path.join(model_dir, new_model_subdir, file_name)
     return new_model_path
 
+   
 def get_train_path(args):
     if 'NELL' in args.data_dir:
         if not args.model.startswith('point'):
