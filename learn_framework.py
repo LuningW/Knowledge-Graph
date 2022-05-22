@@ -4,6 +4,7 @@
  SPDX-License-Identifier: BSD-3-Clause
  For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  
+ 
  Base learning framework.
 """
 
@@ -112,6 +113,7 @@ class LFramework(nn.Module):
             if epoch_id % self.num_wait_epochs == self.num_wait_epochs - 1 or epoch_id == self.num_epochs - 1:
                 self.save_checkpoint(checkpoint_id=epoch_id, epoch_id=epoch_id)
 
+              
             # Check dev set performance
             if epoch_id % self.num_wait_epochs == self.num_wait_epochs - 1:
                 self.eval()
@@ -260,6 +262,7 @@ class LFramework(nn.Module):
         print('KG embeddings exported to {}'.format(vector_path))
         print('KG meta data exported to {}'.format(meta_data_path))
 
+        
     @property
     def rl_variation_tag(self):
         parts = self.model.split('.')
