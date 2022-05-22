@@ -16,6 +16,7 @@ from src.utils.ops import int_fill_var_cuda, var_cuda, zeros_var_cuda
 import IPython
 import numpy as np
 """
+
 梯度策略
 初始化——训练参数、推理参数？、分析
 奖励函数
@@ -73,6 +74,7 @@ class PolicyGradient(LFramework):
         action_entropy = output['action_entropy']
         path_trace = output['path_trace']
 
+        
         # Compute discounted reward
         final_reward = self.reward_fun(e1, r, e2, pred_e2, path_trace)
         if self.baseline != 'n/a':
