@@ -5,7 +5,9 @@
  For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  
  Knowledge Graph Environment.
-"""
+""" 
+
+
 
 import collections
 import os
@@ -317,6 +319,7 @@ class KnowledgeGraph(nn.Module):
                 score = float(score)
                 if score < theta:
                     continue
+                
                 print(line)
                 if '{}\t{}\t{}'.format(e1, e2, r) in removed_triples:
                     continue
