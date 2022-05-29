@@ -17,6 +17,7 @@ from src.utils.ops import unique_max, var_cuda, zeros_var_cuda, int_var_cuda, in
 
 Table 5: Case study of our model on link prediction experiment. For the triple query, we show the three reasoning
 paths with the top-3 scores via beam search. The relation and entity in bold are additional actions generated using
+
 dynamic completion strategy. The correct entities for the triple query are underline.
 """
 def beam_search(pn, e_s, q, e_t, kg, num_steps, beam_size, return_path_components=False, use_kg_pred=False, kg_pred=None, fn_kg=None):
